@@ -12,6 +12,8 @@ import streamlit as st
 from streamlit_cropperjs import st_cropperjs
 from styles import load_css
 
+# Custom CSS optimized for mobile with navigation styling
+st.markdown(load_css(), unsafe_allow_html=True)
 # Set page configuration
 st.set_page_config(
     page_title="Homework Grader",
@@ -297,9 +299,6 @@ def about_page():
         "All temporary files are deleted when you reset the app or close the browser."
     )
 
-
-# Custom CSS optimized for mobile with navigation styling
-st.markdown(load_css(), unsafe_allow_html=True)
 
 # Create a session state for tracking temporary files
 if "temp_files" not in st.session_state:
