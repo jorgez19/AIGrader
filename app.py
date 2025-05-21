@@ -12,8 +12,6 @@ import streamlit as st
 from streamlit_cropperjs import st_cropperjs
 from styles import load_css
 
-# Custom CSS optimized for mobile with navigation styling
-st.markdown(load_css(), unsafe_allow_html=True)
 # Set page configuration
 st.set_page_config(
     page_title="Homework Grader",
@@ -21,6 +19,8 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+# Custom CSS optimized for mobile with navigation styling
+st.markdown(load_css(), unsafe_allow_html=True)
 
 
 # Define pages
